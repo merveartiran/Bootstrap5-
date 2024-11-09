@@ -27,76 +27,321 @@ GRID Layout sşstemi web sayfasının dğzenin organize etmek için sayfayı sü
 1:-Bootstrap grid sistemi: Bir dizi sütunu içeren container ile başlar bu  sütunlar içindeki containera bağlı düzenlenir.
 Offset: Sütunları birbirinden uzaklaştırmak veya yer değiştirmek için offset yapısı kullanılır.-->
     <!-- Start codes here-->
-
-<div class="container">
-    <p style="color: red;">İnside the container</p>
-</div>
-<!--grid layout=12-->
-<div class="container">
-    <div class="row">
-        <div class="col-md-6" style="background-color: black;">first area</div>
-        <div class="col-md-6" style="background-color: blue;">second area</div>
+    <div class="container">
+      <div class="row">
+        <!--height-->
+        <div style="height: 200px">
+          <div class="h-25 bg-danger mb-2">height 25%</div>
+          <div class="h-55 bg-success mb-2">height 50%</div>
+          <div class="h-75 bg-danger mb-2">height 75%</div>
+          <div class="h-100 bg-info mb-2">height 100%</div>
+        </div>
+      </div>
     </div>
-</div>
-<hr>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6" style="background-color: rgb(50, 17, 17);">first area</div>
-        <div class="col-md-6" style="background-color: rgb(166, 166, 221);">second area</div>
+    <br><br><br><br><br><br><br></br><br><br></br>
+    <div class="container">
+      <div class="row">
+        <!--max width-->
+        <div class="mw-100 p-3 bg-success mt-5">max width %100</div>
+        <div class="w-50 p-3 bg-success mt-3">width %50</div>
+        <div class="w-75 p-3 bg-success mt-4 mb-4">width %75</div>
+        <div class="w-100 p-3 bg-success">width %100</div>
+      </div>
     </div>
-</div>
-<hr>
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3" style="background-color: rgb(79, 77, 77);">first area</div>
-        <div class="col-sm-6 col-md-4 col-lg-3" style="background-color: rgb(18, 18, 232);">second area</div>
-        <div class="col-sm-6 col-md-4 col-lg-3" style="background-color: rgb(169, 8, 8);">third area</div>
-        <div class="col-sm-6 col-md-4 col-lg-3" style="background-color: rgb(14, 14, 39);">fourth area</div>
-  
+    <div class="container">
+      <p style="color: red">İnside the container</p>
     </div>
-</div>
-<hr>
-<!-- Display-1 den display-6ya kadar bootstrap5 de başlık için kullanılır.-->
-<hr>
-  <div class="container">
-    <div class="row">
-
-      <!-- background-color -->
-      <p class="text-primary bg-dark display-1">Primary Color</p>
-      <hr>
-      <!-- color -->
-      <p class="text-primary display-5">Primary Color</p>
-      <p class="text-secondary h5">secondary Color</p>
-      <p class="text-success display-3">success Color</p>
-      <p class="text-info">info Color</p>
-      <p class="text-dark h4">dark Color</p>
-      <hr>
-      <!-- Heading -->
-      <!-- p.h${Heading-$}*6 -->
-      <p class="h1">Heading-1</p>
-      <p class="h2">Heading-2</p>
-      <p class="h3">Heading-3</p>
-      <p class="h4">Heading-4</p>
-      <p class="h5">Heading-5</p>
-      <p class="h6">Heading-6</p>
-
-      <hr>
-      <!-- display -->
-      <!-- p.h${Heading-$}*6 -->
-      <p class="display-1">Display-1</p>
-      <p class="display-2">Display-2</p>
-      <p class="display-3">Display-3</p>
-      <p class="display-4">Display-4</p>
-      <p class="display-5">Display-5</p>
-      <p class="display-6">Display-6</p>
+    <!--grid layout=12-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" style="background-color: black">first area</div>
+        <div class="col-md-6" style="background-color: blue">second area</div>
+      </div>
     </div>
-  </div>
+    <hr />
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6" style="background-color: rgb(50, 17, 17)">
+          first area
+        </div>
+        <div class="col-md-6" style="background-color: rgb(166, 166, 221)">
+          second area
+        </div>
+      </div>
+    </div>
+    <hr />
 
-  <hr>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-sm-6 col-md-4 col-lg-3"
+          style="background-color: rgb(79, 77, 77)"
+        >
+          first area
+        </div>
+        <div
+          class="col-sm-6 col-md-4 col-lg-3"
+          style="background-color: rgb(18, 18, 232)"
+        >
+          second area
+        </div>
+        <div
+          class="col-sm-6 col-md-4 col-lg-3"
+          style="background-color: rgb(169, 8, 8)"
+        >
+          third area
+        </div>
+        <div
+          class="col-sm-6 col-md-4 col-lg-3"
+          style="background-color: rgb(14, 14, 39)"
+        >
+          fourth area
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Display-1 den display-6ya kadar bootstrap5 de başlık için kullanılır.-->
+    <hr />
+    <div class="container">
+      <div class="row">
+        <!-- background-color -->
+        <p class="text-primary bg-dark display-1">Primary Color</p>
+        <hr />
+        <!-- color -->
+        <p class="text-primary display-5">Primary Color</p>
+        <p class="text-secondary h5">secondary Color</p>
+        <p class="text-success display-3">success Color</p>
+        <p class="text-info">info Color</p>
+        <p class="text-dark h4">dark Color</p>
+        <hr />
+        <!-- Heading -->
+        <!-- p.h${Heading-$}*6 -->
+        <p class="h1">Heading-1</p>
+        <p class="h2">Heading-2</p>
+        <p class="h3">Heading-3</p>
+        <p class="h4">Heading-4</p>
+        <p class="h5">Heading-5</p>
+        <p class="h6">Heading-6</p>
 
+        <hr />
+        <!-- display -->
+        <!-- p.h${Heading-$}*6 -->
+        <p class="display-1">Display-1</p>
+        <p class="display-2">Display-2</p>
+        <p class="display-3">Display-3</p>
+        <p class="display-4">Display-4</p>
+        <p class="display-5">Display-5</p>
+        <p class="display-6">Display-6</p>
+      </div>
+    </div>
 
+    <hr />
 
+    <!--Bootstrap de text metin rengi büyüklük ağırlık ve diğer metin özelliklerini ayarlamamıza yardımcı olur.
+text-start, text-center, text-end şeklinde text başa ortaya sola hizalanır
+text-sm-start
+text-md-start
+text-lg-start
+text-xl-start büyüklüğünü ayarlar.
+text-lowercase
+text-uppercase
+text-capitalize
+text font size için class="fs-1" den fs-6 ya kadar ayarlanır
+fw-bold
+fw-bolder
+fw-italic
+-->
+    <div class="container">
+      <div class="row">
+        <div class="border border-top">Border</div>
+        <br /><br />
+        <div class="rounded-top border">Border</div>
+        <div class="rounded-circle border">Border</div>
+        <div class="rounded-pill border">Border</div>
+        <br /><br />
+        <div class="border border-4 border-secondary">Border</div>
+        <div class="border border-2 border-success">Border</div>
+        <div class="border border-0 border-info">Border</div>
+
+        <p class="fst-italic">italic</p>
+        <p class="fst-normak">normal</p>
+        <p class="fw-bold fs-1">font weight bold</p>
+        <p class="fw-bolder fs-2">font weight bolder</p>
+        <p class="fw-italic fs-5">font weight italic</p>
+        <p class="fw-light fs-6">font weight light</p>
+        <p class="text-muted">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          nostrum itaque minima porro facere molestiae quod reprehenderit
+          accusamus culpa tempore alias nulla, quae temporibus, voluptas,
+          dolorem consequuntur aspernatur similique fugit. Reprehenderit cumque
+          ipsam, perferendis dignissimos obcaecati adipisci ipsa recusandae
+          natus eaque ratione tempore suscipit architecto maxime illum sed magni
+          dolorum deserunt est assumenda tenetur? Animi quidem maxime officiis
+          quo deserunt.
+        </p>
+        <p class="text-capitalize">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui
+          veritatis saepe praesentium dolorem fugit. Quam explicabo, quibusdam
+          in alias veniam dolorem nulla consectetur. Odio voluptas eveniet amet
+          quis et.
+        </p>
+        <p class="text-lg-start">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quas
+          sunt temporibus excepturi eaque ex repellat atque nulla, sint
+          necessitatibus mollitia molestias. Voluptates ipsam, sint impedit a
+          repellat dicta reprehenderit.
+        </p>
+        <p class="text-success text-center">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio, ab
+          laudantium est, fugit quidem assumenda tenetur aliquam similique
+          voluptates blanditiis eaque officia. Et voluptatem voluptates eveniet
+          reiciendis pariatur autem?
+        </p>
+        <p class="text-end text-success text-uppercase">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+          accusamus voluptas saepe id temporibus, dolor optio dolore pariatur
+          libero facilis omnis, suscipit voluptatem at ad eaque incidunt vitae
+          quaerat vero.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="m-3">
+          Bu div tüm kenarlarda 1.5 rem 15px margine sahiptir.
+        </div>
+        <div class="mt-4">
+          Bu div üst kenarlarda 2 rem 20px margine sahiptir.
+        </div>
+
+        <div class="mb-4">
+          Bu div alt kenarlarda 2 rem 20px margine sahiptir.
+        </div>
+        <div class="mx-5">sağ ve sol kenara ekler</div>
+        <div class="my-5">üst ve alt kenara ekler</div>
+        <div class="ms-4">sol kenara ekler</div>
+        <div class="me-4">sağ kenara ekler</div>
+      </div>
+    </div>
+    <!-- m yarine p yazınca hepsinin padding versiyonu olur.yani içten boşluk ankamına gelir.-->
+    <hr />
+    0=0px 1=4px 2=8px 3=16px 4=24px 5=48px
+    <hr />
+    <!-- padding -->
+    <div class="container">
+      <div class="row">
+        <div class="bg-dark text-primary py-5 mb-5 display-5">4.KUTU</div>
+        <div class="bg-dark text-primary mb-2 px-5">3.KUTU</div>
+        <div class="bg-dark text-primary p-5 mb-2">2.KUTU</div>
+        <div class="bg-dark text-primary pt-5 pe-4 ps-3 pb-5">1.KUTU</div>
+      </div>
+    </div>
+    <hr />
+    <!-- margin -->
+    <div class="container">
+      <div class="row">
+        <div
+          class="bg-dark text-primary my-5 display-3 text-center text-success"
+        >
+          4.KUTU
+        </div>
+        <div class="bg-dark text-primary mx-5">3.KUTU</div>
+        <div class="bg-dark text-primary m-5">2.KUTU</div>
+        <div class="bg-dark text-primary mt-5 me-4 ms-3 mb-5">1.KUTU</div>
+      </div>
+    </div>
+
+    <hr />
+    <!--İnput,link,size-->
+    <div class="container">
+      <div class="row">
+        <button type="button" class="btn btn-link">Link</button>
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-primary" type="button">Buttonexample</button>
+          <button class="btn btn-primary" type="button">Buttonexample</button>
+          <button class="btn btn-primary" type="button">Buttonexample</button>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <button class="btn btn-danger my-3 mx-3">Button-1</button>
+
+    <button class="btn btn-outline-secondary my-2 ms-4 btn-sm">Button-2</button>
+    <button class="btn btn-outline-warning my-2 ms-5 btn-lg">Button-3</button>
+    <button class="btn btn-link my-2 ms-5 btn-lg">Button-4</button>
+    <input type="submit" class="btn btn-link my-2 ms-5 btn-lg" value="İnput" />
+    <a href="#!" class="btn btn-danger my-2 ms-5 btn-lg">Link-data</a>
+
+    <hr />
+    <div class="d-lg-block">
+      <p>Büyük ekranda blok seviyesinde gösterir.</p>
+    </div>
+
+    <div class="d-md-none">
+      <p>Orta ekranda gösterme</p>
+    </div>
+
+    <div class="d-flex">
+      <p>Bu flex konteynardır</p>
+    </div>
+
+    <div class="d-inline-flex">
+      <p>Bu flex konteynardır</p>
+    </div>
+
+    <!-- display -->
+    <button class="btn btn-primary">button</button>
+    <button class="btn btn-primary d-inline">d-inline</button>
+    <button class="btn btn-primary d-inline-block">d-inline-block</button>
+    <button class="btn btn-primary d-block mt-2">d-block</button>
+    <button class="btn btn-primary d-none">Button</button>
+
+    <hr />
+    <br /><br />
+
+    <!-- display -->
+    <button class="btn btn-primary">button</button>
+    <button class="btn btn-primary d-inline">d-inline</button>
+    <button class="btn btn-primary d-inline-block">d-inline-block</button>
+    <button class="btn btn-primary d-block my-3">d-block</button>
+    <button class="btn btn-primary d-none">Button</button>
+
+    <hr />
+    <br /><br />
+
+    <div class="d-grid gap-4 mx-auto">
+      <button class="btn btn-primary">Data-1x</button>
+      <button class="btn btn-primary">Data-2x</button>
+      <button class="btn btn-primary">Data-3x</button>
+    </div>
+
+    <div class="d-grid gap-4 d-md-block mt-3">
+      <button class="btn btn-primary">Data-1x</button>
+      <button class="btn btn-primary">Data-2x</button>
+      <button class="btn btn-primary">Data-3x</button>
+    </div>
+
+    <hr />
+    <div class="d-grid gap-4">
+      <button class="btn btn-primary">Data-1</button>
+      <button class="btn btn-primary">Data-2</button>
+      <button class="btn btn-primary">Data-3</button>
+    </div>
+    <hr />
+    <button class="btn btn-primary mt-2">Button-1</button>
+    <button class="btn btn-secondary mt-2">Button-2</button>
+    <button class="btn btn-warning mt-2">Button-2</button>
+    <hr />
+    <button class="btn btn-outline-warning mt-2">Button-3</button>
+    <button class="btn btn-outline-warning mt-2 btn-sm">Button-3</button>
+    <button class="btn btn-outline-warning mt-2 btn-lg">Button-3</button>
+    <button class="btn btn-danger mt-2 btn-lg active">active</button>
+    <button class="btn btn-danger mt-2 btn-lg disabled">disabled</button>
+    <button class="btn btn-link mt-2 btn-sm">Button-3</button>
+    <hr />
+    <input type="submit" class="btn btn-link mt-2 btn-sm" value="input" />
+    <a href="#!" class="btn btn-danger mt-2 btn-sm">Link Data</a>
 
     <!--End code-->
 
