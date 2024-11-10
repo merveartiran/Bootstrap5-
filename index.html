@@ -28,6 +28,17 @@ GRID Layout sşstemi web sayfasının dğzenin organize etmek için sayfayı sü
 Offset: Sütunları birbirinden uzaklaştırmak veya yer değiştirmek için offset yapısı kullanılır.-->
     <!-- Start codes here-->
  <div class="container">
+
+
+
+
+
+
+
+
+
+
+   
     <!-- dropdown -->
 <nav
     class="navbar navbar-expand-md navbar-dark bg-dark"
@@ -56,6 +67,12 @@ Offset: Sütunları birbirinden uzaklaştırmak veya yer değiştirmek için off
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal"
+                    data-bs-target="#registerId">Register</a>
+                </li>
+                
+
                 <li class="nav-item dropdown">
                     <a
                         class="nav-link dropdown-toggle"
@@ -64,17 +81,17 @@ Offset: Sütunları birbirinden uzaklaştırmak veya yer değiştirmek için off
                         data-bs-toggle="dropdown"
                         aria-haspopup="true"
                         aria-expanded="false"
-                        >Dropdown</a
+                        >Catalog</a
                     >
                     <div
                         class="dropdown-menu"
                         aria-labelledby="dropdownId"
                     >
                         <a class="dropdown-item" href="#"
-                            >Action 1</a
+                           >Women</a
                         >
                         <a class="dropdown-item" href="#"
-                            >Action 2</a
+                            >Men</a
                         >
                     </div>
                 </li>
@@ -86,7 +103,7 @@ Offset: Sütunları birbirinden uzaklaştırmak veya yer değiştirmek için off
                     placeholder="Search"
                 />
                 <button
-                    class="btn btn-outline-success my-2 my-sm-0"
+                    class="btn btn-outline-warning my-2 my-sm-0"
                     type="submit"
                 >
                     Search
@@ -95,7 +112,257 @@ Offset: Sütunları birbirinden uzaklaştırmak veya yer değiştirmek için off
         </div>
     </div>
 </nav>
+<hr>
+<!--carousel-->
+<div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="First slide"
+        ></li>
+        <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="1"
+            aria-label="Second slide"
+        ></li>
+        <li
+            data-bs-target="#carouselId"
+            data-bs-slide-to="2"
+            aria-label="Third slide"
+        ></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <img
+                src="./img/DALL·E 2024-08-29 23.45.25 - A modern, minimalist logo design for the brand name 'Bright Pine Apparel.' The logo should convey simplicity, nature, and style. The design should be .webp"
+                class="w-100 d-block"
+                alt="First slide"
+            />
+        </div>
+        <div class="carousel-item">
+            <img
+                src="./img/DALL·E 2024-08-29 23.09.25 - A minimalist t-shirt design with a stylized cherry illustration on the front. The cherry is more abstract and artistic, with a smooth, modern look. Th.webp"
+                class="w-100 d-block"
+                alt="Second slide"
+            />
+        </div>
+        <div class="carousel-item">
+            <img
+                src="./img/DALL·E 2024-08-29 23.54.31 - A modern, minimalist logo design for the brand name 'Bright Pine Apparel' displayed on a sock. The logo should convey simplicity, nature, and style. T.webp"
+                class="w-100 d-block"
+                alt="Third slide"
+            />
+        </div>
+    </div>
+    <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselId"
+        data-bs-slide="prev"
+    >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselId"
+        data-bs-slide="next"
+    >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<hr>
+<!--Card-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"><div class="card">
+            <img class="card-img-top" src="./img/pexels-helen1-13885792.jpg" alt="Title" />
+            <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nostrum qui facere aperiam sed commodi error ipsam maxime totam quod.</p>
+            </div>
+        </div></div>
+        <div class="col-md-4"><div class="card">
+            <img class="card-img-top" src="./img/pexels-helen1-13885792.jpg" alt="Title" />
+            <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nostrum qui facere aperiam sed commodi error ipsam maxime totam quod.</p>
+            </div>
+        </div></div>
+        <div class="col-md-4"><div class="card">
+            <img class="card-img-top" src="./img/pexels-helen1-13885792.jpg" alt="Title" />
+            <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nostrum qui facere aperiam sed commodi error ipsam maxime totam quod.</p>
+            </div>
+        </div></div>
+    </div>
+</div>
 
+
+<hr>
+<!-- Modal trigger button -->
+
+
+<!-- Modal Body -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div
+    class="modal fade"
+    id="registerId"
+    tabindex="-1"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    
+    role="dialog"
+    aria-labelledby="modalTitleId"
+    aria-hidden="true"
+>
+    <div
+        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+        role="document"
+    >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                  Register
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">Register Data</div>
+            <form action="#!" method="get" target="-blank">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="display-4 text-center fw-bold text-uppercase">Register</h1>
+                        <div class="form-group mb-3">
+                            <div class="col-sm-12 col-md-1 col-lg-1">
+                            <label for="uname"> <span class="text-uppercase">Name:</span></label>
+                           </div>
+                           <div class="col-sm-12 col-md-11 col-lg-6">
+                            <input type="text" class="form-control" placeholder="name" id="uname" required autofocus="on">
+                           </div>
+                        </div>
+                       
+                        <div class="form-group mb-3">
+                            <div class="col-sm-12 col-md-1 col-lg-1">
+                            <label for="umail"> <span class="text-uppercase">Email:</span></label>
+                           </div>
+                           <div class="col-sm-12 col-md-11 col-lg-6">
+                            <input type="email" class="form-control" placeholder="email" id="umail" required >
+                           </div>
+                        </div>
+                       
+                        <div class="form-group mb-3">
+                            <div class="col-sm-12 col-md-1 col-lg-1">
+                            <label for="upassword"> <span class="text-uppercase">Password:</span></label>
+                           </div>
+                           <div class="col-sm-12 col-md-11 col-lg-6">
+                            <input type="password" class="form-control" placeholder="password" id="upassword" required >
+                           </div>
+                        </div>
+                        <div class="form-group mb-3 mt-4">
+                            <button type="reset" class="btn btn-warning btn-sm">Temizle</button>
+                            <button type="submit" class="btn btn-primary btn-sm">Gönder</button>
+                        </div>
+                    </div>
+                </div>
+            
+            </form>
+            <div class="modal-footer">
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional: Place to the bottom of scripts -->
+<script>
+    const myModal = new bootstrap.Modal(
+        document.getElementById("registerId"),
+        options,
+    );
+</script>
+
+
+ <hr>
+ <!-- Modal trigger button -->
+ <button
+    type="button"
+    class="btn btn-primary btn-lg"
+    data-bs-toggle="modal"
+    data-bs-target="#loginId"
+ >
+    Launch
+ </button>
+ 
+ <!-- Modal Body -->
+ <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+ <div
+    class="modal fade"
+    id="loginId"
+    tabindex="-1"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    
+    role="dialog"
+    aria-labelledby="modalTitleId"
+    aria-hidden="true"
+ >
+    <div
+        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md"
+        role="document"
+    >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">
+                    Modal title
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">Body</div>
+            <div class="modal-footer">
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                >
+                    Close
+                </button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+ </div>
+ 
+ <!-- Optional: Place to the bottom of scripts -->
+ <script>
+    const myModal = new bootstrap.Modal(
+        document.getElementById("loginId"),
+        options,
+    );
+ </script>
+ 
     <hr>
     <div class="dropdown">
         <button
